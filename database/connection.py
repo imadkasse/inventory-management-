@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine  ,select
 from sqlalchemy.orm import Session
-from models import Base , Category
+from .models import Base , Category
 
 
 engine = create_engine(r"sqlite:///D:\project\inventory_app\db.db", echo=True )

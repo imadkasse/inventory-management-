@@ -81,7 +81,7 @@ class Transaction(Base):
     Relationship:
     - product: Linked to the Product model (back_populates="transactions")
     """
-    __tablename__ = "Transactions"
+    __tablename__ = "transactions"
     id:Mapped[int]= mapped_column(primary_key=True)
     product_id:Mapped[int] = mapped_column(ForeignKey("products.id"))
     type:Mapped[str] = mapped_column(nullable=False)

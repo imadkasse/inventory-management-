@@ -1,13 +1,14 @@
 """
 this file contains all proccess with table `categories`
 """
+
 from database.models import Category 
 from sqlalchemy import select
 from database.connection import session
 
+
 def add_category(name, description):
     try:
-        
         new_category = Category(name=name, description=description)
         session.add(new_category)
         session.commit()
