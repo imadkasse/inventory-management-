@@ -15,3 +15,4 @@ from services.product_service  import find_many_product
 # print('Transaction:')
 # print(find_many_transaction())
 
+print('good')
